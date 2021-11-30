@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Background" x="0.0" y="0.0" width="1000.0"
+             height="600.0" fileName="{PROJECT_FOLDER}BG13.png"/>
+  <Component type="ScriptFloatingTile" id="PRESETS" x="-3.0" y="67.0" width="200.0"
+             height="463.0" ContentType="PresetBrowser" bgColour="0" itemColour="4290812827"
+             itemColour2="0" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: false,&#13;&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#13;&#10;  &quot;ShowFolderButton&quot;: false,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: false,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: false,&#13;&#10;  &quot;NumColumns&quot;: 1,&#13;&#10;  &quot;ColumnWidthRatio&quot;: [&#13;&#10;    0.5,&#13;&#10;    0.5,&#13;&#10;    0.5&#13;&#10;  ]&#13;&#10;}"
+             Font="Arial" FontSize="10.0" textColour="4290812827"/>
+  <Component type="ScriptPanel" id="Spectrum Panel" x="654.0" y="209.0" bgColour="16777215"
+             textColour="16777215" width="190.0" height="183.0" itemColour="0"
+             itemColour2="0">
+    <Component type="ScriptFloatingTile" id="SpectrumTile" x="-16.0" y="-21.0"
+               width="225.0" height="225.0" ContentType="AudioAnalyser" bgColour="3355443"
+               itemColour="16777215" itemColour2="4473924" textColour="0" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#13;&#10;  &quot;Index&quot;: 0,&#13;&#10;  &quot;FollowWorkspace&quot;: false&#13;&#10;}"
+               parentComponent="Spectrum Panel"/>
+  </Component>
+  <Component type="ScriptButton" id="LogoButton" x="6.0" y="528.0" filmstripImage="{PROJECT_FOLDER}NN Logo.png"
+             width="65.0" height="30.0" scaleFactor="0.02999999932944775"
+             saveInPreset="0" enableMidiLearn="0"/>
+  <Component type="ScriptPanel" id="Global Panel" x="219.0" y="72.0" width="280.0"
+             height="80.0" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215">
+    <Component type="ScriptSlider" id="GlobalHP" x="32.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="GlobalHP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20.0" parentComponent="Global Panel"/>
+    <Component type="ScriptLabel" id="GlobalHPlab" x="29.0" y="60.0" text="HP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Global Panel"/>
+    <Component type="ScriptSlider" id="GlobalLP" x="66.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="GlobalLP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20000.0" parentComponent="Global Panel"/>
+    <Component type="ScriptLabel" id="GlobalLPlab" x="63.0" y="60.0" text="LP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Global Panel"/>
+    <Component type="ScriptSlider" id="GlobalWidth" x="121.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="MainGain" parameterId="Width"
+               max="200.0" middlePosition="100.0" defaultValue="100.0" parentComponent="Global Panel"/>
+    <Component type="ScriptLabel" id="GlobalWidthlab" x="118.0" y="60.0" text="W"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Global Panel"/>
+    <Component type="ScriptSlider" id="GlobalGain" x="176.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="MainGain" parameterId="Gain"
+               mode="Decibel" min="-99.0" max="24.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-62.0" parentComponent="Global Panel"
+               defaultValue="-15.0"/>
+    <Component type="ScriptLabel" id="GlobalGainlab" x="173.0" y="60.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Global Panel"/>
+    <Component type="ScriptSlider" id="GlobalPan" x="231.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="MainGain" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" parentComponent="Global Panel"/>
+    <Component type="ScriptLabel" id="GlobalPanlab" x="228.0" y="60.0" text="P"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Global Panel"/>
+  </Component>
+  <Component type="ScriptPanel" id="Instrument 1 Panel" x="220.0" y="170.0"
+             bgColour="16777215" itemColour="0" itemColour2="0" textColour="16777215"
+             width="280.0" height="70.0">
+    <Component type="ScriptLabel" id="AttackLabel1" x="9.0" y="55.0" text="A"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptSlider" id="InstRknb1" x="63.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope1"
+               parameterId="Decay" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="300.0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptLabel" id="DecayLabel1" x="60.0" y="55.0" text="D"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptLabel" id="ReleaseLabel5" x="112.0" y="55.0" text="R"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptLabel" id="SustainLabel1" x="85.0" y="55.0" text="S"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptSlider" id="Releasekb1" x="114.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope1"
+               parameterId="Release" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20.0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptButton" id="Instrument1Button" x="5.0" y="3.0" width="24.0"
+               height="24.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+               scaleFactor="0.4000000059604645" processorId="Sampler1" parameterId="Enabled"
+               defaultValue="1.0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptComboBox" id="Combobox1" x="133.0" y="5.0" max="65"
+               height="16.0" width="140.0" bgColour="0" itemColour="787717"
+               itemColour2="657930" items="BASS 80s Low&#10;BASS Acid Space&#10;BASS Beefy Moog&#10;BASS Cyberbass&#10;BASS Driven&#10;BASS Mini Jazz&#10;BASS Snobby Moog&#10;BASS Subby&#10;BASS Synthwave&#10;BASS Thick Moog&#10;BELL Clang&#10;BELL Marimba&#10;BELL Ringer&#10;BELL Stelly&#10;BELL UFO Bell&#10;FX Tape 1&#10;FX Tape-Vinyl 1&#10;FX Tape-Vinyl 2&#10;FX Vinyl 1&#10;FX Vinyl 2&#10;KEY 80s Piano&#10;KEY Clav&#10;KEY Clicky&#10;KEY Electric 1&#10;KEY Electric 2&#10;KEY Electric Prophet&#10;KEY Floating&#10;KEY Honky Tonky&#10;KEY Rhodes&#10;KEY Toy Synth&#10;LEAD Brass Solo&#10;LEAD Harp Synth&#10;LEAD Luxury&#10;LEAD Metallic Prophet&#10;LEAD Perfect Fifth&#10;LEAD Prophet Lead&#10;LEAD Stay&#10;LEAD Theramin&#10;LEAD Throaty&#10;LEAD Tremelo&#10;PAD Big Jupiter&#10;PAD Classic Juno 1&#10;PAD Classic Juno 2&#10;PAD Galaxy Strings&#10;PAD Juno 60s&#10;PAD Jupiter Dreams&#10;PAD Shakey&#10;PAD Strings&#10;PAD Thickemz&#10;PAD Wide Juno&#10;PLUCK Growler&#10;PLUCK Prophet&#10;PLUCK Soggy&#10;PLUCK Trop House&#10;PLUCK Wobble&#10;SHP Pulse Clean&#10;SHP Pulse Dirty&#10;SHP Saw Clean&#10;SHP Saw Dirty&#10;SHP Sine Clean&#10;SHP Sine Dirty&#10;SHP Square Clean&#10;SHP Square Dirty&#10;SHP Triangle Clean&#10;SHP Triangle Dirty"
+               textColour="4290222489" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptSlider" id="InstHPknb1" x="176.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler1LP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20000.0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptLabel" id="HPLaebl1" x="148.0" y="55.0" text="HP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptSlider" id="InstLPknb1" x="152.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler1HP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20.0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptLabel" id="LPLabel1" x="174.0" y="55.0" text="LP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptSlider" id="Inst1Gainknb1" x="247.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler1WGP" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptLabel" id="GainLabel1" x="209.0" y="55.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptSlider" id="InstPanknb1" x="212.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler1WGP" parameterId="Gain"
+               mode="Decibel" min="-99.0" max="24.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-62.0" parentComponent="Instrument 1 Panel"
+               defaultValue="-15.0"/>
+    <Component type="ScriptLabel" id="PanLabel1" x="244.0" y="55.0" text="P"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptSlider" id="Holdknb1" x="37.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope1"
+               parameterId="Hold" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="5.0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptLabel" id="HoldLabel1" x="34.0" y="55.0" text="H"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 1 Panel"/>
+    <Component type="ScriptSlider" id="InstRknb5" x="88.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope1"
+               parameterId="Sustain" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Decibel" max="0.0" middlePosition="-50.0" parentComponent="Instrument 1 Panel"
+               min="-99.0"/>
+    <Component type="ScriptSlider" id="Holdknb5" x="11.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope1"
+               parameterId="Attack" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="5.0" parentComponent="Instrument 1 Panel" stepSize="1.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Instrument 2 Panel" x="220.0" y="260.0"
+             bgColour="16777215" itemColour="0" itemColour2="0" textColour="16777215"
+             width="280.0" height="80.0">
+    <Component type="ScriptSlider" id="Holdknb6" x="11.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope2"
+               parameterId="Attack" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="5.0" parentComponent="Instrument 2 Panel" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="Releasekb2" x="114.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope2"
+               parameterId="Release" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20.0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptLabel" id="SustainLabel2" x="85.0" y="60.0" text="S"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptLabel" id="ReleaseLabel6" x="112.0" y="60.0" text="R"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptLabel" id="DecayLabel2" x="60.0" y="60.0" text="D"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptSlider" id="InstRknb2" x="63.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope2"
+               parameterId="Decay" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="300.0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptLabel" id="AttackLabel2" x="9.0" y="60.0" text="A"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptButton" id="Instrument2Button" x="5.0" y="8.0" width="24.0"
+               height="24.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+               scaleFactor="0.4000000059604645" processorId="Sampler2" parameterId="Enabled"
+               defaultValue="1.0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptComboBox" id="Combobox2" x="133.0" y="11.0" max="65"
+               height="16.0" width="140.0" bgColour="0" itemColour="787717"
+               itemColour2="657930" items="BASS 80s Low&#10;BASS Acid Space&#10;BASS Beefy Moog&#10;BASS Cyberbass&#10;BASS Driven&#10;BASS Mini Jazz&#10;BASS Snobby Moog&#10;BASS Subby&#10;BASS Synthwave&#10;BASS Thick Moog&#10;BELL Clang&#10;BELL Marimba&#10;BELL Ringer&#10;BELL Stelly&#10;BELL UFO Bell&#10;FX Tape 1&#10;FX Tape-Vinyl 1&#10;FX Tape-Vinyl 2&#10;FX Vinyl 1&#10;FX Vinyl 2&#10;KEY 80s Piano&#10;KEY Clav&#10;KEY Clicky&#10;KEY Electric 1&#10;KEY Electric 2&#10;KEY Electric Prophet&#10;KEY Floating&#10;KEY Honky Tonky&#10;KEY Rhodes&#10;KEY Toy Synth&#10;LEAD Brass Solo&#10;LEAD Harp Synth&#10;LEAD Luxury&#10;LEAD Metallic Prophet&#10;LEAD Perfect Fifth&#10;LEAD Prophet Lead&#10;LEAD Stay&#10;LEAD Theramin&#10;LEAD Throaty&#10;LEAD Tremelo&#10;PAD Big Jupiter&#10;PAD Classic Juno 1&#10;PAD Classic Juno 2&#10;PAD Galaxy Strings&#10;PAD Juno 60s&#10;PAD Jupiter Dreams&#10;PAD Shakey&#10;PAD Strings&#10;PAD Thickemz&#10;PAD Wide Juno&#10;PLUCK Growler&#10;PLUCK Prophet&#10;PLUCK Soggy&#10;PLUCK Trop House&#10;PLUCK Wobble&#10;SHP Pulse Clean&#10;SHP Pulse Dirty&#10;SHP Saw Clean&#10;SHP Saw Dirty&#10;SHP Sine Clean&#10;SHP Sine Dirty&#10;SHP Square Clean&#10;SHP Square Dirty&#10;SHP Triangle Clean&#10;SHP Triangle Dirty"
+               textColour="4290222489" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptSlider" id="InstHPknb2" x="176.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler2LP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20000.0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptLabel" id="HPLaebl2" x="148.0" y="60.0" text="HP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptSlider" id="InstLPknb2" x="152.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler2HP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20.0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptLabel" id="LPLabel2" x="174.0" y="60.0" text="LP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptSlider" id="Inst1Gainknb2" x="247.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler2WGP" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptLabel" id="GainLabel2" x="209.0" y="60.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptSlider" id="InstPanknb2" x="212.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler2WGP" parameterId="Gain"
+               mode="Decibel" min="-99.0" max="24.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-62.0" parentComponent="Instrument 2 Panel"
+               defaultValue="-15.0"/>
+    <Component type="ScriptLabel" id="PanLabel2" x="244.0" y="60.0" text="P"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptSlider" id="Holdknb2" x="37.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope2"
+               enableMidiLearn="0" scrollWheel="0" showTextBox="0" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="5.0" saveInPreset="0" linkedTo="GlobalAttknb" parameterId="Hold"
+               parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptLabel" id="AttackLabel5" x="34.0" y="60.0" text="H"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 2 Panel"/>
+    <Component type="ScriptSlider" id="InstRknb6" x="88.0" y="42.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope2"
+               parameterId="Sustain" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Decibel" max="0.0" middlePosition="-50.0" parentComponent="Instrument 2 Panel"
+               min="-99.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Instrument 3 Panel" x="220.0" y="358.0"
+             bgColour="16777215" itemColour="0" itemColour2="0" textColour="16777215"
+             width="280.0" height="70.0">
+    <Component type="ScriptSlider" id="Holdknb7" x="11.0" y="38.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope3"
+               parameterId="Attack" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="5.0" parentComponent="Instrument 3 Panel" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="Releasekb3" x="114.0" y="38.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope3"
+               parameterId="Release" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20.0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptLabel" id="SustainLabel3" x="85.0" y="57.0" text="S"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptLabel" id="ReleaseLabel7" x="112.0" y="57.0" text="R"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptLabel" id="DecayLabel3" x="61.0" y="57.0" text="D"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptSlider" id="InstRknb3" x="63.0" y="38.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope3"
+               parameterId="Decay" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="300.0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptLabel" id="AttackLabel3" x="9.0" y="57.0" text="A"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptButton" id="Instrument3Button" x="5.0" y="5.0" width="24.0"
+               height="24.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+               scaleFactor="0.4000000059604645" processorId="Sampler3" parameterId="Enabled"
+               defaultValue="1.0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptComboBox" id="Combobox3" x="133.0" y="5.0" max="65"
+               height="16.0" width="140.0" bgColour="0" itemColour="787717"
+               itemColour2="657930" items="BASS 80s Low&#10;BASS Acid Space&#10;BASS Beefy Moog&#10;BASS Cyberbass&#10;BASS Driven&#10;BASS Mini Jazz&#10;BASS Snobby Moog&#10;BASS Subby&#10;BASS Synthwave&#10;BASS Thick Moog&#10;BELL Clang&#10;BELL Marimba&#10;BELL Ringer&#10;BELL Stelly&#10;BELL UFO Bell&#10;FX Tape 1&#10;FX Tape-Vinyl 1&#10;FX Tape-Vinyl 2&#10;FX Vinyl 1&#10;FX Vinyl 2&#10;KEY 80s Piano&#10;KEY Clav&#10;KEY Clicky&#10;KEY Electric 1&#10;KEY Electric 2&#10;KEY Electric Prophet&#10;KEY Floating&#10;KEY Honky Tonky&#10;KEY Rhodes&#10;KEY Toy Synth&#10;LEAD Brass Solo&#10;LEAD Harp Synth&#10;LEAD Luxury&#10;LEAD Metallic Prophet&#10;LEAD Perfect Fifth&#10;LEAD Prophet Lead&#10;LEAD Stay&#10;LEAD Theramin&#10;LEAD Throaty&#10;LEAD Tremelo&#10;PAD Big Jupiter&#10;PAD Classic Juno 1&#10;PAD Classic Juno 2&#10;PAD Galaxy Strings&#10;PAD Juno 60s&#10;PAD Jupiter Dreams&#10;PAD Shakey&#10;PAD Strings&#10;PAD Thickemz&#10;PAD Wide Juno&#10;PLUCK Growler&#10;PLUCK Prophet&#10;PLUCK Soggy&#10;PLUCK Trop House&#10;PLUCK Wobble&#10;SHP Pulse Clean&#10;SHP Pulse Dirty&#10;SHP Saw Clean&#10;SHP Saw Dirty&#10;SHP Sine Clean&#10;SHP Sine Dirty&#10;SHP Square Clean&#10;SHP Square Dirty&#10;SHP Triangle Clean&#10;SHP Triangle Dirty"
+               textColour="4290222489" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptSlider" id="InstLPknb3" x="152.0" y="38.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler3HP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20.0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptLabel" id="HPLaebl3" x="148.0" y="57.0" text="HP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptSlider" id="InstHPknb3" x="176.0" y="38.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler3LP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20000.0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptLabel" id="LPLabel3" x="174.0" y="57.0" text="LP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptSlider" id="InstPanknb3" x="212.0" y="38.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler3WGP" parameterId="Gain"
+               mode="Decibel" min="-99.0" max="24.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-62.0" parentComponent="Instrument 3 Panel"
+               defaultValue="-15.0"/>
+    <Component type="ScriptLabel" id="GainLabel3" x="209.0" y="57.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptSlider" id="Inst1Gainknb3" x="247.0" y="37.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler3WGP" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptLabel" id="PanLabel3" x="244.0" y="56.0" text="P"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptSlider" id="Holdknb3" x="37.0" y="38.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope3"
+               enableMidiLearn="0" scrollWheel="0" showTextBox="0" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="5.0" saveInPreset="0" linkedTo="GlobalAttknb" parameterId="Hold"
+               parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptLabel" id="AttackLabel6" x="35.0" y="57.0" text="H"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 3 Panel"/>
+    <Component type="ScriptSlider" id="InstRknb7" x="88.0" y="38.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope3"
+               parameterId="Sustain" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Decibel" max="0.0" middlePosition="-50.0" parentComponent="Instrument 3 Panel"
+               min="-99.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Instrument 4 Panel" x="220.0" y="450.0"
+             bgColour="16777215" itemColour="0" itemColour2="0" textColour="16777215"
+             width="280.0" height="70.0">
+    <Component type="ScriptSlider" id="Holdknb8" x="11.0" y="40.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope4"
+               parameterId="Attack" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="5.0" parentComponent="Instrument 4 Panel" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="Releasekb4" x="114.0" y="40.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope4"
+               parameterId="Release" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20.0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptLabel" id="SustainLabel4" x="85.0" y="58.0" text="S"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptLabel" id="ReleaseLabel8" x="112.0" y="58.0" text="R"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptLabel" id="DecayLabel4" x="61.0" y="58.0" text="D"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptSlider" id="InstRknb4" x="63.0" y="40.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope4"
+               parameterId="Decay" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="300.0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptLabel" id="AttackLabel4" x="9.0" y="58.0" text="A"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptButton" id="Instrument4Button" x="5.0" y="6.0" width="24.0"
+               height="24.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+               scaleFactor="0.4000000059604645" processorId="Sampler4" parameterId="Enabled"
+               defaultValue="1.0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptComboBox" id="Combobox4" x="133.0" y="8.0" max="65"
+               height="16.0" width="140.0" bgColour="0" itemColour="787717"
+               itemColour2="657930" items="BASS 80s Low&#10;BASS Acid Space&#10;BASS Beefy Moog&#10;BASS Cyberbass&#10;BASS Driven&#10;BASS Mini Jazz&#10;BASS Snobby Moog&#10;BASS Subby&#10;BASS Synthwave&#10;BASS Thick Moog&#10;BELL Clang&#10;BELL Marimba&#10;BELL Ringer&#10;BELL Stelly&#10;BELL UFO Bell&#10;FX Tape 1&#10;FX Tape-Vinyl 1&#10;FX Tape-Vinyl 2&#10;FX Vinyl 1&#10;FX Vinyl 2&#10;KEY 80s Piano&#10;KEY Clav&#10;KEY Clicky&#10;KEY Electric 1&#10;KEY Electric 2&#10;KEY Electric Prophet&#10;KEY Floating&#10;KEY Honky Tonky&#10;KEY Rhodes&#10;KEY Toy Synth&#10;LEAD Brass Solo&#10;LEAD Harp Synth&#10;LEAD Luxury&#10;LEAD Metallic Prophet&#10;LEAD Perfect Fifth&#10;LEAD Prophet Lead&#10;LEAD Stay&#10;LEAD Theramin&#10;LEAD Throaty&#10;LEAD Tremelo&#10;PAD Big Jupiter&#10;PAD Classic Juno 1&#10;PAD Classic Juno 2&#10;PAD Galaxy Strings&#10;PAD Juno 60s&#10;PAD Jupiter Dreams&#10;PAD Shakey&#10;PAD Strings&#10;PAD Thickemz&#10;PAD Wide Juno&#10;PLUCK Growler&#10;PLUCK Prophet&#10;PLUCK Soggy&#10;PLUCK Trop House&#10;PLUCK Wobble&#10;SHP Pulse Clean&#10;SHP Pulse Dirty&#10;SHP Saw Clean&#10;SHP Saw Dirty&#10;SHP Sine Clean&#10;SHP Sine Dirty&#10;SHP Square Clean&#10;SHP Square Dirty&#10;SHP Triangle Clean&#10;SHP Triangle Dirty"
+               textColour="4290222489" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptLabel" id="PanLabel4" x="244.0" y="57.0" text="P"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptSlider" id="InstLPknb4" x="152.0" y="40.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler4HP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20.0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptLabel" id="HPLaebl4" x="148.0" y="58.0" text="HP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptSlider" id="InstHPknb4" x="176.0" y="40.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler4LP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20000.0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptLabel" id="LPLabel4" x="174.0" y="58.0" text="LP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptSlider" id="InstPanknb4" x="212.0" y="40.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler4WGP" parameterId="Gain"
+               mode="Decibel" min="-99.0" max="24.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-62.0" parentComponent="Instrument 4 Panel"
+               defaultValue="-15.0"/>
+    <Component type="ScriptLabel" id="GainLabel4" x="209.0" y="58.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptSlider" id="Inst1Gainknb4" x="247.0" y="39.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="Sampler4WGP" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptSlider" id="Holdknb4" x="37.0" y="40.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope4"
+               enableMidiLearn="0" scrollWheel="0" showTextBox="0" mode="Time"
+               max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="5.0" saveInPreset="0" linkedTo="GlobalAttknb" parameterId="Hold"
+               parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptLabel" id="AttackLabel7" x="35.0" y="58.0" text="H"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Instrument 4 Panel"/>
+    <Component type="ScriptSlider" id="InstRknb8" x="88.0" y="40.0" width="19.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.3499999940395355" height="19.0" processorId="AHDSR Envelope4"
+               parameterId="Sustain" enableMidiLearn="0" scrollWheel="0" showTextBox="0"
+               mode="Decibel" max="0.0" middlePosition="-50.0" parentComponent="Instrument 4 Panel"
+               min="-99.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="EQ Panel" x="533.0" y="100.0" bgColour="16777215"
+             itemColour="0" itemColour2="0" textColour="16777215" width="440.0"
+             height="80.0">
+    <Component type="ScriptLabel" id="EQBand1" x="34.0" y="14.0" text="Band 1"
+               width="50.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQFreq1" x="17.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1500.0" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" defaultValue="20.0"
+               processorId="Band1" parameterId="Freq" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQGain1" x="47.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.0" mode="Decibel"
+               min="-20.0" max="20.0" stepSize="0.1000000014901161" suffix=" dB"
+               processorId="Band1" parameterId="Gain" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQQ1" x="77.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="4.0" min="0.1000000014901161"
+               max="8.0" defaultValue="1.0" processorId="Band1" parameterId="Q"
+               parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQFreqBand1" x="17.0" y="55.0" text="F"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQGainBand1" x="47.0" y="55.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQQBand1" x="77.0" y="55.0" text="Q" width="25.0"
+               height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQBand2" x="140.0" y="14.0" text="Band 2"
+               width="50.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQFreq2" x="123.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1500.0" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" defaultValue="500.0"
+               processorId="Band2" parameterId="Freq" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQGain2" x="153.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.0" mode="Decibel"
+               min="-20.0" max="20.0" stepSize="0.1000000014901161" suffix=" dB"
+               processorId="Band2" parameterId="Gain" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQQ2" x="183.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="4.0" min="0.1000000014901161"
+               max="8.0" defaultValue="1.0" processorId="Band2" parameterId="Q"
+               parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQQBand2" x="183.0" y="55.0" text="Q"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQGainBand2" x="153.0" y="55.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQFreqBand2" x="123.0" y="55.0" text="F"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQBand3" x="247.0" y="14.0" text="Band 3"
+               width="50.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQFreq3" x="230.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1500.0" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" defaultValue="1500.0"
+               processorId="Band3" parameterId="Freq" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQGain3" x="260.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.0" mode="Decibel"
+               min="-20.0" max="20.0" stepSize="0.1000000014901161" suffix=" dB"
+               processorId="Band3" parameterId="Gain" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQQ3" x="290.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="4.0" min="0.1000000014901161"
+               max="8.0" defaultValue="1.0" processorId="Band3" parameterId="Q"
+               parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQQBand3" x="290.0" y="55.0" text="Q"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQGainBand3" x="260.0" y="55.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQFreqBand3" x="230.0" y="55.0" text="F"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQBand4" x="354.0" y="14.0" text="Band 4"
+               width="50.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQFreq4" x="337.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1500.0" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" defaultValue="5000.0"
+               processorId="Band4" parameterId="Freq" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQGain4" x="367.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.0" mode="Decibel"
+               min="-20.0" max="20.0" stepSize="0.1000000014901161" suffix=" dB"
+               processorId="Band4" parameterId="Gain" parentComponent="EQ Panel"/>
+    <Component type="ScriptSlider" id="EQQ4" x="397.0" y="32.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="4.0" min="0.1000000014901161"
+               max="8.0" defaultValue="1.0" processorId="Band4" parameterId="Q"
+               parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQQBand4" x="397.0" y="55.0" text="Q"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQGainBand4" x="367.0" y="55.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+    <Component type="ScriptLabel" id="EQFreqBand4" x="337.0" y="55.0" text="F"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="EQ Panel"/>
+  </Component>
+  <Component type="ScriptPanel" id="Waves Panel" x="530.0" y="210.0" bgColour="16777215"
+             itemColour="0" itemColour2="0" textColour="16777215" width="100.0"
+             height="180.0">
+    <Component type="ScriptButton" id="WavesButton" x="8.0" y="2.0" width="24.0"
+               height="24.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+               scaleFactor="0.4000000059604645" processorId="LFO Modulator1"
+               parameterId="Enabled" defaultValue="1.0" parentComponent="Waves Panel"/>
+    <Component type="ScriptSlider" id="Wavesknb1" x="23.0" y="44.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="9.0" mode="TempoSync"
+               max="18.0" stepSize="1.0" processorId="LFO Modulator1" parameterId="Frequency"
+               defaultValue="8.0" showValuePopup="Above" parentComponent="Waves Panel"/>
+    <Component type="ScriptLabel" id="WavesLabel1" x="18.0" y="70.0" text="TIME"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Waves Panel"/>
+    <Component type="ScriptSlider" id="Wavesknb2" x="62.0" y="44.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1000.0" mode="Time"
+               max="3000.0" stepSize="1.0" suffix=" ms" processorId="LFO Modulator1"
+               parameterId="FadeIn" defaultValue="100.0" parentComponent="Waves Panel"/>
+    <Component type="ScriptLabel" id="WavesLabel2" x="57.0" y="70.0" text="FADE"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Waves Panel"/>
+    <Component type="ScriptSlider" id="Wavesknb3" x="23.0" y="133.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="500.0" mode="Time"
+               max="1000.0" stepSize="1.0" suffix=" ms" processorId="LFO Modulator1"
+               parameterId="SmoothingTime" parentComponent="Waves Panel"/>
+    <Component type="ScriptLabel" id="WavesLabel3" x="17.0" y="159.0" text="FLAT"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Waves Panel"/>
+    <Component type="ScriptSlider" id="Wavesknb4" x="62.0" y="133.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               suffix="%" processorId="LFO Modulator1" parameterId="PhaseOffset"
+               parentComponent="Waves Panel"/>
+    <Component type="ScriptLabel" id="WavesLabel4" x="54.0" y="159.0" text="PHASE"
+               width="40.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Waves Panel"/>
+    <Component type="ScriptSlider" id="Wavesknb5" x="42.0" y="88.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               processorId="LFO Modulator1" parameterId="Intensity" suffix="%"
+               parentComponent="Waves Panel"/>
+    <Component type="ScriptLabel" id="WavesLabel5" x="39.0" y="114.0" text="MIX"
+               width="30.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Waves Panel"/>
+  </Component>
+  <Component type="ScriptPanel" id="Reverb Panel" x="530.0" y="414.0" bgColour="16777215"
+             itemColour="0" itemColour2="0" textColour="16777215" width="210.0"
+             height="110.0">
+    <Component type="ScriptButton" id="ReverbButton" x="58.0" y="3.0" width="24.0"
+               height="24.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+               scaleFactor="0.4000000059604645" processorId="Reverb1" parameterId="Enabled"
+               defaultValue="1.0" parentComponent="Reverb Panel"/>
+    <Component type="ScriptSlider" id="Reverbknb1" x="41.0" y="38.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1500.0" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" processorId="Reverb1HP"
+               parameterId="Freq" parentComponent="Reverb Panel" defaultValue="20.0"/>
+    <Component type="ScriptLabel" id="ReverbHP" x="36.0" y="64.0" text="HP"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Reverb Panel"/>
+    <Component type="ScriptSlider" id="Reverbknb2" x="145.0" y="38.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1500.0" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" processorId="Rerverb1LP"
+               parameterId="Freq" parentComponent="Reverb Panel" defaultValue="20000.0"/>
+    <Component type="ScriptLabel" id="ReverbLP" x="140.0" y="64.0" text="LP"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Reverb Panel"/>
+    <Component type="ScriptSlider" id="Reverbknb3" x="67.0" y="67.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               suffix="%" processorId="Reverb1" parameterId="Width" parentComponent="Reverb Panel"/>
+    <Component type="ScriptLabel" id="ReverbWidth" x="62.0" y="93.0" text="WIDE"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Reverb Panel"/>
+    <Component type="ScriptSlider" id="Reverbknb4" x="15.0" y="67.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               suffix="%" processorId="Reverb1" parameterId="Damping" parentComponent="Reverb Panel"/>
+    <Component type="ScriptLabel" id="ReverbDamp" x="10.0" y="93.0" text="DAMP"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Reverb Panel"/>
+    <Component type="ScriptSlider" id="Reverbknb5" x="119.0" y="67.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               suffix="%" processorId="Reverb1" parameterId="RoomSize" parentComponent="Reverb Panel"/>
+    <Component type="ScriptLabel" id="ReverbRoom" x="114.0" y="93.0" text="ROOM"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Reverb Panel"/>
+    <Component type="ScriptSlider" id="Reverbknb6" x="171.0" y="67.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               suffix="%" processorId="Reverb1" parameterId="WetLevel" parentComponent="Reverb Panel"/>
+    <Component type="ScriptLabel" id="ReverbWet" x="166.0" y="93.0" text="WET"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Reverb Panel"/>
+  </Component>
+  <Component type="ScriptPanel" id="Delay Panel" x="762.0" y="413.0" bgColour="16777215"
+             itemColour="0" itemColour2="0" textColour="16777215" width="210.0"
+             height="110.0">
+    <Component type="ScriptButton" id="DelayButton" x="61.0" y="4.0" width="24.0"
+               height="24.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+               scaleFactor="0.4000000059604645" processorId="Delay1" parameterId="Enabled"
+               defaultValue="1.0" parentComponent="Delay Panel"/>
+    <Component type="ScriptSlider" id="Delayknb1" x="76.0" y="39.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1500.0" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" processorId="Delay1HP"
+               parameterId="Freq" parentComponent="Delay Panel" defaultValue="20.0"/>
+    <Component type="ScriptLabel" id="DelayHP" x="70.0" y="65.0" text="HP" width="35.0"
+               height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+    <Component type="ScriptSlider" id="Delayknb2" x="107.0" y="39.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="1500.0" mode="Frequency"
+               min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz" processorId="Delay1LP"
+               parameterId="Freq" parentComponent="Delay Panel" defaultValue="20000.0"/>
+    <Component type="ScriptLabel" id="DelayLP" x="99.0" y="65.0" text="LP" width="40.0"
+               height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+    <Component type="ScriptLabel" id="Time1" x="24.0" y="48.0" text="TIME" width="35.0"
+               height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+    <Component type="ScriptSlider" id="Delayknb3" x="14.0" y="62.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="9.0" mode="TempoSync"
+               max="18.0" stepSize="1.0" defaultValue="8.0" processorId="Delay1"
+               parameterId="DelayTimeLeft" parentComponent="Delay Panel" showValuePopup="Above"/>
+    <Component type="ScriptLabel" id="TimeLeft" x="8.0" y="88.0" text="L" width="35.0"
+               height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+    <Component type="ScriptSlider" id="Delayknb4" x="45.0" y="62.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="9.0" mode="TempoSync"
+               max="18.0" stepSize="1.0" defaultValue="8.0" processorId="Delay1"
+               parameterId="DelayTimeRight" parentComponent="Delay Panel" showValuePopup="Above"/>
+    <Component type="ScriptLabel" id="TimeRight" x="37.0" y="88.0" text="R"
+               width="40.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+    <Component type="ScriptSlider" id="Delayknb5" x="92.0" y="72.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               suffix="%" processorId="Delay1" parameterId="Mix" parentComponent="Delay Panel"/>
+    <Component type="ScriptLabel" id="DelayWet" x="86.0" y="98.0" text="WET"
+               width="40.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+    <Component type="ScriptLabel" id="Feedback" x="143.0" y="48.0" text="FDBACK"
+               width="45.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+    <Component type="ScriptSlider" id="Delayknb6" x="138.0" y="62.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               suffix="%" processorId="Delay1" parameterId="FeedbackLeft" parentComponent="Delay Panel"/>
+    <Component type="ScriptLabel" id="FeedbackLeft" x="132.0" y="88.0" text="L"
+               width="35.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+    <Component type="ScriptSlider" id="Delayknb7" x="170.0" y="62.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" middlePosition="0.5" mode="NormalizedPercentage"
+               suffix="%" processorId="Delay1" parameterId="FeedbackRight" parentComponent="Delay Panel"/>
+    <Component type="ScriptLabel" id="FeedbackRight" x="162.0" y="88.0" text="R"
+               width="40.0" height="10.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Delay Panel"/>
+  </Component>
+  <Component type="ScriptPanel" id="Noise Panel" x="864.0" y="208.0" width="110.0"
+             height="180.0" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215">
+    <Component type="ScriptButton" id="NoiseButton" x="14.0" y="4.0" width="24.0"
+               height="24.0" bgColour="16777215" itemColour="3355443" itemColour2="1118481"
+               textColour="16777215" enableMidiLearn="0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+               scaleFactor="0.4000000059604645" defaultValue="1.0" parentComponent="Noise Panel"/>
+    <Component type="ScriptComboBox" id="Noisecmbox" x="6.0" y="50.0" max="65"
+               items="BASS 80s Low&#10;BASS Acid Space&#10;BASS Beefy Moog&#10;BASS Cyberbass&#10;BASS Driven&#10;BASS Mini Jazz&#10;BASS Snobby Moog&#10;BASS Subby&#10;BASS Synthwave&#10;BASS Thick Moog&#10;BELL Clang&#10;BELL Marimba&#10;BELL Ringer&#10;BELL Stelly&#10;BELL UFO Bell&#10;FX Tape 1&#10;FX Tape-Vinyl 1&#10;FX Tape-Vinyl 2&#10;FX Vinyl 1&#10;FX Vinyl 2&#10;KEY 80s Piano&#10;KEY Clav&#10;KEY Clicky&#10;KEY Electric 1&#10;KEY Electric 2&#10;KEY Electric Prophet&#10;KEY Floating&#10;KEY Honky Tonky&#10;KEY Rhodes&#10;KEY Toy Synth&#10;LEAD Brass Solo&#10;LEAD Harp Synth&#10;LEAD Luxury&#10;LEAD Metallic Prophet&#10;LEAD Perfect Fifth&#10;LEAD Prophet Lead&#10;LEAD Stay&#10;LEAD Theramin&#10;LEAD Throaty&#10;LEAD Tremelo&#10;PAD Big Jupiter&#10;PAD Classic Juno 1&#10;PAD Classic Juno 2&#10;PAD Galaxy Strings&#10;PAD Juno 60s&#10;PAD Jupiter Dreams&#10;PAD Shakey&#10;PAD Strings&#10;PAD Thickemz&#10;PAD Wide Juno&#10;PLUCK Growler&#10;PLUCK Prophet&#10;PLUCK Soggy&#10;PLUCK Trop House&#10;PLUCK Wobble&#10;SHP Pulse Clean&#10;SHP Pulse Dirty&#10;SHP Saw Clean&#10;SHP Saw Dirty&#10;SHP Sine Clean&#10;SHP Sine Dirty&#10;SHP Square Clean&#10;SHP Square Dirty&#10;SHP Triangle Clean&#10;SHP Triangle Dirty"
+               width="95.0" height="25.0" bgColour="1023410176" itemColour="1526726656"
+               itemColour2="536870912" fontSize="10.0" textColour="4290222489"
+               parentComponent="Noise Panel"/>
+    <Component type="ScriptSlider" id="GlobalHP1" x="19.0" y="90.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="NoiseHP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20.0" parentComponent="Noise Panel"/>
+    <Component type="ScriptSlider" id="GlobalLP1" x="66.0" y="90.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="NoiseLP" parameterId="Freq"
+               mode="Frequency" min="20.0" max="20000.0" stepSize="1.0" suffix=" Hz"
+               middlePosition="1500.0" defaultValue="20000.0" parentComponent="Noise Panel"/>
+    <Component type="ScriptLabel" id="GlobalLPlab1" x="67.0" y="113.0" text="LP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Noise Panel"/>
+    <Component type="ScriptLabel" id="GlobalHPlab1" x="20.0" y="113.0" text="HP"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Noise Panel"/>
+    <Component type="ScriptSlider" id="GlobalGain1" x="43.0" y="135.0" width="24.0"
+               filmstripImage="{PROJECT_FOLDER}fxkb3-101-3.png" numStrips="101.0"
+               scaleFactor="0.449999988079071" height="24.0" enableMidiLearn="0"
+               scrollWheel="0" showTextBox="0" processorId="NoiseGain" parameterId="Gain"
+               mode="Decibel" min="-99.0" max="24.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-62.0" parentComponent="Noise Panel"/>
+    <Component type="ScriptLabel" id="GlobalGainlab1" x="43.0" y="158.0" text="G"
+               width="25.0" height="15.0" fontSize="10.0" fontStyle="Bold" itemColour2="1118481"
+               textColour="4290222489" editable="0" parentComponent="Noise Panel"/>
+  </Component>
+  <Component type="ScriptSlider" id="Coverup1" x="0.0" y="0.0" filmstripImage="{PROJECT_FOLDER}BG11.png"
+             width="30.0" height="525.0" numStrips="1.0" scaleFactor="0.5"
+             enableMidiLearn="0" scrollWheel="0" showTextBox="0"/>
+  <Component type="ScriptSlider" id="Coverup2" x="186.0" y="0.0" filmstripImage="{PROJECT_FOLDER}BG11.png"
+             width="8.0" height="525.0" numStrips="1.0" scaleFactor="0.5"
+             enableMidiLearn="0" scrollWheel="0" showTextBox="0"/>
+  <Component type="ScriptLabel" id="SETTINGS" x="876.0" y="528.0" editable="0"
+             textColour="4290222489" fontStyle="Regular" width="100.0" height="30.0"/>
+  <Component type="ScriptButton" id="hideShow" x="874.0" y="531.0" filmstripImage="{PROJECT_FOLDER}liteswitch.png"
+             width="24.0" height="24.0" scaleFactor="0.4000000059604645"/>
+  <Component type="ScriptPanel" id="panel1" x="650" y="35" width="350.0" height="490.0"
+             itemColour="4086522432" itemColour2="4081660192" visible="0">
+    <Component type="ScriptFloatingTile" id="FloatingTile1" x="0.0" y="0.0"
+               width="350.0" height="490.0" ContentType="CustomSettings" bgColour="4278190080"
+               itemColour="0" itemColour2="0" Data="{&#13;&#10;  &quot;Driver&quot;: true,&#13;&#10;  &quot;Device&quot;: true,&#13;&#10;  &quot;Output&quot;: true,&#13;&#10;  &quot;BufferSize&quot;: true,&#13;&#10;  &quot;SampleRate&quot;: true,&#13;&#10;  &quot;GlobalBPM&quot;: true,&#13;&#10;  &quot;StreamingMode&quot;: true,&#13;&#10;  &quot;ScaleFactor&quot;: true,&#13;&#10;  &quot;VoiceAmountMultiplier&quot;: true,&#13;&#10;  &quot;ClearMidiCC&quot;: true,&#13;&#10;  &quot;SampleLocation&quot;: true,&#13;&#10;  &quot;DebugMode&quot;: true,&#13;&#10;  &quot;ScaleFactorList&quot;: [&#13;&#10;    0.5,&#13;&#10;    0.75,&#13;&#10;    1.0,&#13;&#10;    1.25,&#13;&#10;    1.5,&#13;&#10;    2.0&#13;&#10;  ]&#13;&#10;}"
+               parentComponent="panel1"/>
+  </Component>
+</ContentProperties>
